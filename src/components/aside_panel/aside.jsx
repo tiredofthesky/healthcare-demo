@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import './aside.scss'
 import logo from '../resource/icon/logo-image.svg'
 import dash from '../resource/icon/pie chart.svg'
@@ -11,14 +11,11 @@ import help from '../resource/icon/web/question/circled.svg'
 
 function Aside() {
 
-
   return (
     <aside>
       <div className="logo">
         <a href='/'><img src={logo} alt="logo" /> </a>
       </div>
-
-
       <ul>
         <p> MEDICINE </p>
 
@@ -29,9 +26,7 @@ function Aside() {
         <li className='im'><img src={disable} alt="" /><a href="">Patients</a></li>
         <li className='im'><img src={bank} alt="" /><a href="">Payments</a></li>
       </ul>
-
       <hr></hr>
-
       <ul>
         <li className='im' ><img src={help} alt="" /><a href="">Help</a></li>
       </ul>
